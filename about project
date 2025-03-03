@@ -1,0 +1,43 @@
+MAX6675 Thermocouple Temperature Monitoring with ESP8266
+Overview
+This project reads temperature data from the MAX6675 thermocouple module using an ESP8266 NodeMCU and displays it in the Serial Monitor. The MAX6675 module provides accurate temperature readings in Celsius.
+
+Components Used
+ESP8266 NodeMCU
+MAX6675 Thermocouple Module
+Jumper Wires
+Circuit Connections
+MAX6675 Pin	ESP8266 Pin
+SO (MISO)	D7
+CS (Chip Select)	D8
+SCK (Clock)	D5
+VCC	3.3V
+GND	GND
+Code Explanation
+The MAX6675 library is included for easy communication with the sensor.
+The temperature is read from the MAX6675 sensor using readCelsius().
+The temperature value is printed in the Serial Monitor every 1 second.
+
+Installation & Usage
+Install the MAX6675 Library
+Open Arduino IDE
+Go to Sketch → Include Library → Manage Libraries
+Search for "max6675" and install the library
+Upload the Code
+Connect ESP8266 to your PC
+Select the correct board and port
+Upload the provided code
+View Output
+
+Open Serial Monitor (Baud rate: 115200)
+See real-time temperature readings in Celsius
+Code
+cpp
+Copy
+Edit
+
+Applications
+✅ Industrial temperature monitoring
+✅ Home automation systems
+✅ Weather stations
+✅ Lab experiments requiring precise temperature readings
